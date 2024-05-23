@@ -5,34 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UWU Art</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!-- Se agrega link de bootstrap -->
-    <style>
-        body {
-            background-color: #333333; /* Cambia el color de fondo del cuerpo del documento */
-        }
-        .center-text {
-            text-align: center; /* Centra el texto */
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Cambia la fuente del texto */
-            color: white; /* Color del texto */
-            font-size: 75px; /* Tamaño de la fuente */
-        }
-        .carousel-item img {
-            width: 350px; /* Ancho deseado */
-            height: 350px; /* Alto deseado */
-        }
-        .card {
-            margin: 10px; /* Agrega un pequeño margen entre las tarjetas */
-        }
-        .btn-custom {
-            background-color: #919191; /* Cambia el color de fondo */
-            border-color: #ffffff; /* Cambia el color del borde */
-            color: #e6e6e6; /* Cambia el color del texto */
-            font-size: x-large; 
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            margin-top: -90px; /* Ajusta el valor según sea necesario */
-            margin-right: 20px;
-            float: right;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a la hoja de estilos personalizada -->
 </head>
 <body>
    
@@ -43,10 +16,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">INICIO</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">ANIME</a>
                 </li>
                 <li class="nav-item">
@@ -63,6 +36,10 @@
     </nav>
 
     <h1 class="center-text">TU TIENDA OTAKU</h1> <!-- Titulo de la página con un estilo H1-->
+    <h1>    <!-- Button trigger modal -->
+        <button type="button" class="btn-custom" data-toggle="modal" data-target="#exampleModal">
+            Suscribete!
+        </button>
         </h1>
     
         <div class="d-flex flex-wrap justify-content-around"> <!-- Card de cada polera -->
@@ -73,8 +50,7 @@
                   <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
                   <p class="card-text">Precio $15.990</p>
                   <p class="card-text">Envíos a todo Chile</p>
-                  <a href="./index.html" class="btn btn-primary">COMPRAR</a>
-                  <a href="index.html" class="btn btn-secondary">VOLVER</a></center>
+                  <a href="./index.html" class="btn btn-primary">COMPRAR</a></center>
                 </div>
             </div>
     </div>
