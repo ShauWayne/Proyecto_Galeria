@@ -1,6 +1,6 @@
 
         body {
-            background: #3f3e3e; /* Cambia el color de fondo del cuerpo del documento */
+            background: #161616; /* Cambia el color de fondo del cuerpo del documento */
         }
         .center-text {
             text-align: center; /* Centra el texto */
@@ -27,7 +27,7 @@
             color: #e6e6e6; /* Cambia el color del texto */
             font-size: x-large; 
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            margin-top: -90px; /* Ajusta el valor según sea necesario */
+            margin-top: -50px; /* Ajusta el valor según sea necesario */
             margin-right: 20px;
             float: right;
         }
