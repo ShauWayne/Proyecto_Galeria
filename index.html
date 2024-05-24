@@ -4,49 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UWU Art</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!-- Se agrega link de bootstrap -->
+    <style>
+        body {
+            background-color: #333333; /* Cambia el color de fondo del cuerpo del documento */
+        }
+        .center-text {
+            text-align: center; /* Centra el texto */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Cambia la fuente del texto */
+            color: white; /* Color del texto */
+            font-size: 75px; /* Tamaño de la fuente */
+        }
+        .carousel-item img {
+            width: 350px; /* Ancho deseado */
+            height: 350px; /* Alto deseado */
+        }
+        .card {
+            margin: 10px; /* Agrega un pequeño margen entre las tarjetas */
+        }
+        .btn-custom {
+            background-color: #919191; /* Cambia el color de fondo */
+            border-color: #ffffff; /* Cambia el color del borde */
+            color: #e6e6e6; /* Cambia el color del texto */
+            font-size: x-large; 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: -90px; /* Ajusta el valor según sea necesario */
+            margin-right: 20px;
+            float: right;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="center-text">TU TIENDA OTAKU</h1>
+    
+ 
+
+    <h1 class="center-text">TU TIENDA OTAKU</h1> <!-- Titulo de la página con un estilo H1-->
     <h1>    <!-- Button trigger modal -->
-        <button type="button" class="btn-custom" data-toggle="modal" data-target="#exampleModal">
-            Suscribete!
-        </button>
-        </h1>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- implementación barra de navegación -->
-        <a class="navbar-brand" href="index.html">SOMOS UWU</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">INICIO</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="anime.html">ANIME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="games.html">GAMES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="rock.html">ROCK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-            <div class="navbar-text" id="uf-value">
-                <p>Cargando Valor...</p>
-            </div>
-        </div>
-    </nav>
-    <br><br>
-    <div id="carouselExample" class="carousel slide" data-ride="carousel">
-        <!-- Se activa el Data ride para que el carrusel comience a funcionar de manera automática -->
+    <button type="button" class="btn-custom" data-toggle="modal" data-target="#exampleModal">
+        Suscribete!
+    </button>
+    </h1>
+    <div id="carouselExample" class="carousel slide" data-ride="carousel"> <!-- Se activa el Data ride para que el carrusel comience a funcionar de manera automática -->
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./imagenes/carrusel1.jpeg" class="d-block w-100" alt="...">
@@ -55,14 +53,15 @@
                 <img src="./imagenes/carrusel2.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./imagenes/carrusel3.jpeg" class="d-block w-100" alt="...">
-            </div>
+                <img src="./imagenes/carrusel3.jpeg" class="d-block w-100" alt="..."><!-- Imagen banner 3 -->
+                </div>
+
             <div class="carousel-item">
                 <img src="./imagenes/carrusel4.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./imagenes/carrusel5.png" class="d-block w-100" alt="...">
-            </div>
+                <img src="./imagenes/carrusel5.png" class="d-block w-100" alt="..."><!-- Imagen banner 5 -->
+                </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -72,47 +71,38 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
         </a>
-    </div>
-    <div class="d-flex flex-wrap justify-content-around">
-        <!-- Card de cada polera -->
-        <div class="card">
-            <img src="./imagenes/polera1.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <center>
-                    <h5 class="card-title">JUJUTSU KAISEN</h5>
-                    <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
-                    <a href="./polera1.html" class="btn btn-primary">COMPRAR</a>
-                </center>
+        <div class="d-flex flex-wrap justify-content-around"> <!-- Card de cada polera -->
+            <div class="card">                                                      <!-- Card polera 1 -->
+                <img src="./imagenes/polera1.webp" class="card-img-top" alt="...">
+                <div class="card-body">                                             
+                    <center><h5 class="card-title">JUJUTSU KAISEN</h5>
+                  <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
+                  <a href="./polera1.html" class="btn btn-primary">COMPRAR</a></center>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/polera2.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <center>
-                    <h5 class="card-title">SAINT SEIYA</h5>
-                    <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
-                    <a href="./polera2.html" class="btn btn-primary">COMPRAR</a>
-                </center>
+            <div class="card">                                                      <!-- Card polera 2 -->
+                <img src="./imagenes/polera2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5 class="card-title">Elige la tuya!</h5>
+                  <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
+                  <a href="./polera2.html" class="btn btn-primary">COMPRAR</a></center>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/polera3.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <center>
-                    <h5 class="card-title">ONE PIECE</h5>
-                    <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
-                    <a href="./polera3.html" class="btn btn-primary">COMPRAR</a>
-                </center>
+            <div class="card">                                                      <!-- Card polera 3 -->
+                <img src="./imagenes/polera3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5 class="card-title">Elige la tuya!</h5>
+                  <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
+                  <a href="./polera3.html" class="btn btn-primary">COMPRAR</a></center>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/polera4.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <center>
-                    <h5 class="card-title">HUNTER X HUNTER</h5>
-                    <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
-                    <a href="./polera4.html" class="btn btn-primary">COMPRAR</a>
-                </center>
+            <div class="card">                                                      <!-- Card polera 4 -->
+                <img src="./imagenes/polera4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center><h5 class="card-title">Elige la tuya!</h5>
+                  <p class="card-text">Tallas: XS-S-M-L-XL-XXL-XXXL</p>
+                  <a href="./polera4.html" class="btn btn-primary">COMPRAR</a></center>
+                </div>
             </div>
         </div>
     </div>
@@ -128,22 +118,19 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Ingresa tu correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@gmail.com">
+                    <label for="exampleFormControlInput1" class="form-label">Ingresa tu correo electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@gmail.com">
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Scripts de JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!--Enlaza los archivos JavaScript necesarios para el funcionamiento de Bootstrap y el carrusel.-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./consumo.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
 </body>
 </html>
