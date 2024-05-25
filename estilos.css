@@ -31,4 +31,22 @@
             margin-right: 20px;
             float: right;
         }
+
+        .is-invalid {
+            border-color: #dc3545;
+        }
+        .invalid-feedback {
+            display: none;
+            color: #dc3545;
+        }
+        .is-invalid + .invalid-feedback {
+            display: block;
+        }
+        /* Estilo para los títulos */
+        .form-group label {
+            color: white; /* Color del texto */
+        }
+        label {
+            color: white;
+        }
   
