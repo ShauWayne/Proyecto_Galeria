@@ -41,34 +41,35 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <form>
+                        <form id="contactForm">
                             <div class="mb-3"  style="font-size: 16px; color: white;">
                                 <label for="inputEmail" class="form-label">Ingresa tu Correo</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="tucorreo@gmail.com">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="tucorreo@gmail.com" required>
                             </div>
                             <div class="mb-3"  style="font-size: 16px; color: white;">
                                 <label for="formGroupExampleInput">Nombre completo</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" required>
                               </div>
                               <div class="mb-3"  style="font-size: 16px; color: white;">
                                 <label for="formGroupExampleInput">Telefono de contacto</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" required>
                               </div>
                               <div class="mb-3" style="font-size: 16px; color: white;">
                                 <label for="inputConsulta" class="form-label">Déjanos tu consulta</label>
-                                <textarea class="form-control" id="inputConsulta" rows="3"></textarea>
+                                <textarea class="form-control" id="inputConsulta" rows="3" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar</button>
                             <a href="index.html" class="btn btn-secondary">Volver</a>
-                            
-                        </form>
+                            <div id="thankYouMessage" class="alert alert-success mt-3" style="display: none;">
+                                Gracias por contactarnos. Nos pondremos en contacto contigo pronto.                   
                     </div>
                 </div>
             </div>
-            
+        </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!--Enlaza los archivos JavaScript necesarios para el funcionamiento de Bootstrap y el carrusel.-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+    <script src="./enviar.js"></script>
     
 
 
