@@ -27,7 +27,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="rock.html">ROCK</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
@@ -38,14 +38,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form id="contactForm">
+                <form id="contactForm"> <!--ContactForm, seria el formato que ademas se usa para la validación-->
                     <div class="mb-3">
                         <label for="fullName" class="form-label">Nombre completo</label>
                         <input type="text" class="form-control" id="fullName" required>
                         <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="contactForm">
                         <label for="inputEmail" class="form-label">Ingresa tu Correo</label>
                         <input type="email" class="form-control" id="inputEmail" placeholder="tucorreo@gmail.com" required>
                         <div class="invalid-feedback">Favor, ingresar un correo electrónico válido.</div>
@@ -98,6 +98,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
     <script src="validaciones.js"></script>
-    <script src="validamail.js"></script> <!-- Enlace al archivo de validaciones externo -->
 </body>
 </html>
